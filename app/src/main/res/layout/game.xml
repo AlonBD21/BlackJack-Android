@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/match_root_fl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_grass" />
+
+    <LinearLayout
+        android:id="@+id/game_root_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_weight="0.4">
+
+            <il.co.alonbd.blackjack.Hand
+                android:id="@+id/dealer_hand"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:rotation="180">
+
+            </il.co.alonbd.blackjack.Hand>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/hand_box"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_weight="0.4">
+
+            <il.co.alonbd.blackjack.Hand
+                android:id="@+id/hand1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </il.co.alonbd.blackjack.Hand>
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/buttons_ll"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:padding="4dp">
+
+            <android.support.v7.widget.AppCompatImageButton
+                android:id="@+id/hit"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/plus" />
+
+            <android.support.v7.widget.AppCompatImageButton
+                android:id="@+id/end"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/end" />
+
+            <android.support.v7.widget.AppCompatImageButton
+                android:id="@+id/doubleup"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/doubleup" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/pause"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="top|right"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@android:drawable/ic_media_pause" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|left"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="#d6d6d6"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@color/colorPrimary"
+                android:padding="2dp"
+                android:src="@drawable/money_bag" />
+
+            <il.co.alonbd.blackjack.TokensDisplay
+                android:id="@+id/money_tv"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginLeft="4dp"
+                android:fontFamily="cursive"
+                android:gravity="right|center_vertical"
+                android:paddingRight="8dp"
+                android:text=""
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="#d6d6d6"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="#eda428"
+                android:padding="2dp"
+                android:src="@drawable/pokerchip" />
+
+            <il.co.alonbd.blackjack.TokensDisplay
+                android:id="@+id/bet_tv"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginLeft="4dp"
+                android:fontFamily="cursive"
+                android:gravity="right|center_vertical"
+                android:paddingRight="8dp"
+                android:text=""
+                android:textColor="#eda428"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/hand_value"
+        android:layout_width="wrap_content"
+        android:layout_height="30sp"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="65dp"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:letterSpacing="1.4"
+        android:text="?"
+        android:textColor="#540303"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/dealer_hand_value"
+        android:layout_width="wrap_content"
+        android:layout_height="30sp"
+        android:layout_gravity="top|center"
+        android:layout_marginTop="6dp"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:letterSpacing="1.4"
+        android:text="?"
+        android:textColor="#303030"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+</FrameLayout>

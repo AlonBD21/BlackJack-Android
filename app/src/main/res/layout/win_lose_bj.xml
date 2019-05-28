@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        android:textColor="#ffd500"
+        android:textStyle="bold|italic"
+        android:text="🏆WON🏆"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:textColor="#503200"
+        android:textStyle="bold|italic"
+        android:text="🔥BURNED🔥"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2️⃣BLACK♠️JACK1️⃣"
+        android:textColor="#b40000"
+        android:textSize="40sp"
+        android:textStyle="bold|italic"
+        android:lines="1"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:textColor="#5d2b8f"
+        android:textStyle="bold|italic"
+        android:text="🤝PUSH🤝"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:textColor="#0020af"
+        android:textStyle="bold|italic"
+        android:text="OUT💸OF💸MONEY"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:textColor="#0020af"
+        android:textStyle="bold|italic"
+        android:text="👊LOST👊"
+        />
+</LinearLayout>

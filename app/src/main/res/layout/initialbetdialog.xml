@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:background="@drawable/shape_btn">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Feeling🍀Lucky?"
+    android:textSize="30sp"
+    android:textStyle="bold"
+    android:textColor="#fff"
+    android:gravity="center"
+    android:layout_margin="15dp"/>
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:id="@+id/bet_sb"
+        android:layout_margin="15dp"
+        android:background="@drawable/shape_simple_btn"/>
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:textStyle="italic"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Choose Amount, Min 10%"
+        android:id="@+id/amount_tv"
+        android:layout_margin="5dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:text="accept"
+        android:id="@+id/accept_btn"
+        android:background="@drawable/shape_simple_btn"
+        android:layout_margin="15dp"/>
+</LinearLayout>
